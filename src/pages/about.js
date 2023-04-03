@@ -8,6 +8,7 @@ import Image from "next/image";
 import RavinTeja from "../../public/images/RavinTeja.png";
 import Card from "@/components/Card";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
 
 const About = () => {
   return (
@@ -79,6 +80,7 @@ const About = () => {
             </div>
           </div>
           <Skills/>
+          <Experience />
         </Layout>
       </main>{" "}
     </>
