@@ -1,0 +1,22 @@
+{
+  "EducationList": [
+    {
+      "degree": "Bachelors in Computer Science",
+      "period": "2008 - 2012",
+      "university": "University of California, Los Angeles",
+      "description": "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
+    },
+    {
+      "degree": "Masters in Computer Science",
+      "period": "2012 - 2014",
+      "university": "University of California, Los Angeles",
+      "description": "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
+    },
+    {
+      "degree": "Masters in Computer Science",
+      "period": "2012 - 2014",
+      "university": "University of California, Los Angeles",
+      "description": "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
+    }
+  ]
+}

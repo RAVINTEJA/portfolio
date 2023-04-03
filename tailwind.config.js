@@ -20,8 +20,26 @@ module.exports = {
       },
       animation: {
         "spin-slow": "spin 10s linear infinite",
-      }
+      },
+      backgroundImage: {
+        circularLight:
+          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px, #f5f5f5 100px)",
+        circularLightSm:
+          "repeating-radial-gradient(rgba(0,0,0,.4) 2px,#f5f5f5 5px,#f5f5f5 40px)",
+        circularLightMd:
+        "repeating-radial-gradient(rgba(0,0,0,.4) 2px,#f5f5f5 5px,#f5f5f5 60px)",
+        circularLightLg:
+        "repeating-radial-gradient(rgba(0,0,0,.4) 2px,#f5f5f5 5px,#f5f5f5 80px)",
+        circularDark:
+          "repeating-radial-gradient(hsla(0,0%,100%,.5) 2px, #1b1b1b 5px, #1b1b1b 100px)",
+        circularDarkSm:
+          "repeating-radial-gradient(hsla(0,0%,100%,.5) 2px, #1b1b1b 5px, #1b1b1b 40px)",
+        circularDarkMd:
+          "repeating-radial-gradient(hsla(0,0%,100%,.5) 2px, #1b1b1b 5px, #1b1b1b 60px)",
+        circularDarkLg:
+          "repeating-radial-gradient(hsla(0,0%,100%,.5) 2px, #1b1b1b 5px, #1b1b1b 80px)",
+      },
+      plugins: [],
     },
-    plugins: [],
   },
 };
