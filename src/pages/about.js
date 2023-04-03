@@ -9,6 +9,7 @@ import RavinTeja from "../../public/images/RavinTeja.png";
 import Card from "@/components/Card";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 const About = () => {
   return (
@@ -81,6 +82,7 @@ const About = () => {
           </div>
           <Skills/>
           <Experience />
+          <Education />
         </Layout>
       </main>{" "}
     </>
