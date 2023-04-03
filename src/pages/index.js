@@ -5,6 +5,8 @@ import profilePic from "../../public/images/main.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
+import HireMe from "@/components/HireMe";
+import LightBulb from "../../public/images/lightbulb.svg";
 
 export default function Home() {
   return (
@@ -56,6 +58,10 @@ export default function Home() {
             </div>
           </div>
         </Layout>
+        <HireMe />
+        <div className="absolute bottom-8 right-8 w-24 inline-block bg-light">
+          <Image src={LightBulb} alt="Light Bulb" className="w-full h-auto" />
+          </div>
       </main>
     </>
   );
