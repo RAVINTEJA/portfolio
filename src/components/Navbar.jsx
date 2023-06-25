@@ -10,6 +10,7 @@ import {
   DribbbleIcon,
 } from "./Icons.js";
 import { motion } from "framer-motion";
+import useThemeSwitcher from "./hooks/useThemeSwitcher.js";
 // React Navigation bar component using Tailwind CSS
 
 const CustomLink = ({ href, title, className = "" }) => {
@@ -19,7 +20,7 @@ const CustomLink = ({ href, title, className = "" }) => {
     <Link href={href} className={`${className} relative group`}>
       {title}
       <span
-        className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
+        className={`h-[1px] inline-block bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
        ${router.asPath === href ? "w-full" : "w-0"}`}
       >
         &nbsp;
@@ -28,9 +29,12 @@ const CustomLink = ({ href, title, className = "" }) => {
   );
 };
 
-export default function Navbar() {
+const Navbar = () => {
+
+  const [theme, setTheme] = useThemeSwitcher();
+
   return (
-    <header className="w-full px-32 py-8  font-medium flex items-center bg-light justify-between">
+    <header className="w-full px-32 py-8  font-medium flex items-center bg-light dark:bg-dark dark:text-light justify-between">
       <nav>
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mx-4" />
@@ -64,6 +68,22 @@ export default function Navbar() {
         >
           <DribbbleIcon />
         </motion.a>
+        <button
+          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          className="ml-3 flex items-center justify-center rounded-full p-1  bg-light dark:bg-dark"
+        >
+          {theme === "dark" ? (
+            <SunIcon
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              className="w-6 ml-3"
+            />
+          ) : (
+            <MoonIcon
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              className="w-6 ml-3"
+            />
+          )}
+        </button>
       </nav>
       <div className="absolute left-[50%] top-2 translate-x-[-50%">
         <Logo />
@@ -71,3 +91,5 @@ export default function Navbar() {
     </header>
   );
 }
+
+export default Navbar;

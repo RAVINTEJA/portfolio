@@ -14,6 +14,7 @@ const quote = {
   },
 };
 
+
 const singleWord = {
     initial: {
       opacity: 0,
