@@ -52,9 +52,10 @@ const Skills = () => {
         >
           Web
         </motion.div>
+        {/* Add key while mapping list to componets */}
         {
             skillsList.map((skill) => (
-                <Skill name={skill.name} x={skill.x} y={skill.y} />
+                <Skill name={skill.name} x={skill.x} y={skill.y} key={skill.name}/>
             ))
         }
         
