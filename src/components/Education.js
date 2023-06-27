@@ -47,7 +47,7 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           {data.EducationList.map((data) => (
-            <SingleEducation data={data} />
+            <SingleEducation data={data} key={data.period} />
           ))}
         </ul>
       </div>

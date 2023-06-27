@@ -54,7 +54,7 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           {data.ExperienceList.map((data) => (
-            <SingleExperience data={data} />
+            <SingleExperience data={data} key={data.period} />
           ))}
         </ul>
       </div>
