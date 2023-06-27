@@ -5,12 +5,12 @@ import Head from "next/head";
 import AnimatedText from "@/components/AnimatedText";
 import Image from "next/image";
 //import RavinTeja.png
-import EMS from "../../public/images/SS1.png";
-import Inv from "../../public/images/SS2.png";
-import Pro1 from "../../public/images/SS3.png";
-import Pro2 from "../../public/images/SS4.png";
-import Pro3 from "../../public/images/SS5.png";
-import Pro4 from "../../public/images/SS6.png";
+import EMS from  "./../../public/images/SS1.png";
+import Inv from  "./../../public/images/SS2.png";
+import Pro1 from "./../../public/images/SS3.png";
+import Pro2 from "./../../public/images/SS4.png";
+import Pro3 from "./../../public/images/SS5.png";
+import Pro4 from "./../../public/images/SS6.png";
 import {FeaturedProject,ProjectCard} from "@/components/ProjectCards";
 import Link from "next/link";
 
@@ -34,7 +34,7 @@ const Projects = () => {
                 name="Employee Managemnt System"
                 link="/"
                 githubLink="/"
-                imgURL={EMS}
+                imgURL={EMS} 
                 description="Employee management system website that enables offline work to be easily uploaded and managed online, streamlining the process and increasing efficiency."
               />
             </div>
