@@ -5,7 +5,6 @@ import Head from "next/head";
 import AnimatedText from "@/components/AnimatedText";
 import Image from "next/image";
 //import RavinTeja.png
-import RavinTeja from "./../../public/images/RavinTeja.jpg";
 import Card from "@/components/Card";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
@@ -59,7 +58,9 @@ const About = () => {
                 // className="h-max w-full rounded-2xl bg-dark"
                 className="relative col-span-3 h-max rounded-2xl border-2 border-solid border-dark  bg-light dark:border-light dark:bg-dark xl:col-span-4 md:col-span-8 md:order-1 "
                 // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                src={RavinTeja}
+                src="/images/RavinTeja.jpg" 
+                width={500}
+                height={500}
               />
             </Card>
             <div className="col-span-8  xl:col-span-2 flex xl:flex-col  xl:items-center items-end justify-around">

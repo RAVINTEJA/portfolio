@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Image from "next/image";
-import profilePic from "./../../public/images/main.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
@@ -20,8 +19,10 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center lg:justify-between w-full">
             <div className="w-full sm:w-0 lg:w-1/2 ">
               <Image
-                src={profilePic}
+                src="/images/main.png"
                 alt="Ravin Teja"
+                width={500}
+                height={500}
                 className="w-full h-auto"
               />
             </div>

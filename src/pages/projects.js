@@ -3,16 +3,7 @@ import React from "react";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import AnimatedText from "@/components/AnimatedText";
-import Image from "next/image";
-//import RavinTeja.png
-import EMS from  "./../../public/images/SS1.png";
-import Inv from  "./../../public/images/SS2.png";
-import Pro1 from "./../../public/images/SS3.png";
-import Pro2 from "./../../public/images/SS4.png";
-import Pro3 from "./../../public/images/SS5.png";
-import Pro4 from "./../../public/images/SS6.png";
 import {FeaturedProject,ProjectCard} from "@/components/ProjectCards";
-import Link from "next/link";
 
 
 const Projects = () => {
@@ -34,7 +25,7 @@ const Projects = () => {
                 name="Employee Managemnt System"
                 link="/"
                 githubLink="/"
-                imgURL={EMS} 
+                imgURL="/images/SS1.png" 
                 description="Employee management system website that enables offline work to be easily uploaded and managed online, streamlining the process and increasing efficiency."
               />
             </div>
@@ -44,7 +35,7 @@ const Projects = () => {
                 title="Employee Management System"
                 link="/"
                 githubLink="/"
-                imgURL={Pro1}
+                imgURL="/images/SS2.png"
               />
             </div>
             <div className="col-span-12 md:col-span-6">
@@ -53,7 +44,7 @@ const Projects = () => {
                 title="Employee Management System"
                 link="/"
                 githubLink="/"
-                imgURL={Pro2}
+                imgURL="/images/SS3.png"
               />
             </div>
             <div className="col-span-12">
@@ -61,7 +52,7 @@ const Projects = () => {
                 name="Inverse Cooking"
                 link="/"
                 githubLink="/"
-                imgURL={Inv}
+                imgURL="/images/SS4.png"
                 description="Inverse Cooking is a dataset of 1.2 million cooking recipes with 13.5 million cooking instructions automatically extracted from 800K food blogs. The dataset is unique in its size, diversity, and accuracy, and can be used for several downstream tasks such as cooking recipe retrieval, recipe classification, and ingredient prediction."
               />
             </div>
@@ -71,7 +62,7 @@ const Projects = () => {
                 title="Employee Management System"
                 link="/"
                 githubLink="/"
-                imgURL={Pro3}
+                imgURL="/images/SS5.png"
               />
             </div>
             <div className="col-span-12 md:col-span-6">
@@ -80,7 +71,7 @@ const Projects = () => {
                 title="Employee Management System"
                 link="/"
                 githubLink="/"
-                imgURL={Pro4}
+                imgURL="/images/SS6.png"
               />
             </div>
           </div>
