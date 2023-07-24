@@ -5,7 +5,7 @@ const useThemeSwitcher = () => {
 
 
     const prefersDarkMode = "(prefers-color-scheme: dark)";
-    const [theme, setTheme] = useState("");
+    const [theme, setTheme] = useState("dark");
 
     useEffect(() => {
         const mediaQuery = window.matchMedia(prefersDarkMode);

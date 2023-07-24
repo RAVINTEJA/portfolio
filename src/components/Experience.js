@@ -9,7 +9,7 @@ const SingleExperience = ({ data }) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-start justify-between md:w-[80%]"
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto md flex flex-col items-start justify-between md:w-[80%]"
     >
       <LiIcon reference={ref} />
       <motion.div 
@@ -43,16 +43,16 @@ const Experience = () => {
     offset: ["start end", "center start"],
   });
   return (
-    <div className="my-64">
+    <div className="my-64 lg:my-0">
       <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
         Experience
       </h2>
-      <div ref={ref} className="relative w-[75%] mx-auto lg:w-[60%] md:w-full">
+      <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-0 w-[4px] md:w-[2px] md:left-9 xs:left-20 h-full bg-dark  origin-top  dark:bg-primaryDark dark:shadow-3xl"
+          className="absolute left-9 top-0 w-[4px] md:w-[2px] md:left-[30px] sm:left-[20px] xs:left-[18px]  h-full bg-dark  origin-top  dark:bg-primaryDark dark:shadow-3xl"
         />
-        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
+        <ul className="w-full flex flex-col items-start justify-between ml-4 md:ml-2">
           {data.ExperienceList.map((data) => (
             <SingleExperience data={data} key={data.period} />
           ))}

@@ -64,7 +64,7 @@ const Navbar = () => {
     };
 
     return (
-        <header className="w-full px-32 py-8 relative font-medium flex items-center justify-between bg-light dark:bg-dark dark:text-light ">
+        <header className="w-full px-32 lg:px-16 py-8 relative font-medium flex items-center justify-between bg-light dark:bg-dark dark:text-light ">
             {/* Create Hamburger button  */}
             <button
                 className=" flex-col justify-center items-center hidden lg:flex"
@@ -220,7 +220,7 @@ const Navbar = () => {
                     </nav>
                 </motion.div>
             )}
-            <div className="absolute left-[50%] translate-x-[-50%">
+            <div className="absolute left-[50%] top-3 lg:top-2 md:top-1 translate-x-[-50%]">
                 <Logo />
             </div>
         </header>
