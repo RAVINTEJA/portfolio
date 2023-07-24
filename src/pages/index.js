@@ -8,6 +8,8 @@ import HireMe from "@/components/HireMe";
 import LightBulb from "/public/images/lightbulb.svg";
 import LightBulbDark from "/public/images/lightbulbdark.svg";
 import useThemeSwitcher from "@/components/hooks/useThemeSwitcher";
+import TransitionEffect from "@/components/TransitionEffect";
+
 
 export default function Home() {
 
@@ -18,6 +20,7 @@ export default function Home() {
         <title>Ravin Teja</title>
         <meta name="description" content="Portfolio Website" />
       </Head>
+      <TransitionEffect />
       <main className="flex items-center pt-0  text-dark 2xl:-my-16 md:my-0 bg-light  dark:bg-dark dark:text-light w-full min-h-screen">
         <Layout className=" lg:p-8 lg:pt-0 2xl:pb-8 2xl:px-16 p-32 pt-0">
           <div className="flex w-full items-start justify-between lg:justify-center md:flex-col">
