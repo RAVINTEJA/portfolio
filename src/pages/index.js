@@ -44,7 +44,7 @@ export default function Home() {
               </p>
               <div className="flex items-center lg:self-center self-start mt-2">
                 <Link
-                  href="/RavinTeja.pdf"
+                  href="https://drive.google.com/file/d/1z9S5X8lq4nFtA4iRjsAhEFtQEipHFd5m/view?usp=sharing"
                   target={"_blank"}
                   className="flex items-center bg-dark dark:bg-light text-light dark:text-dark p-2.5 px-6 xs:px-4
                   rounded-lg text-lg xs:text-base font-semibold
