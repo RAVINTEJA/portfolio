@@ -4,14 +4,14 @@ import Image from "next/image";
 
 const ProjectCard = ({ link, name, githubLink, imgURL }) => {
     return (
-      <article class="relative flex w-full flex-col items-center justify-center rounded-2xl  rounded-br-2xl  border  border-solid  border-dark bg-light p-6  shadow-2xl dark:border-light dark:bg-dark  xs:p-4 ">
+      <article className="relative flex w-full flex-col items-center justify-center rounded-2xl  rounded-br-2xl  border  border-solid  border-dark bg-light p-6  shadow-2xl dark:border-light dark:bg-dark  xs:p-4 ">
         <div
-          // class="absolute  top-0 -right-3 -z-10 h-[103%] w-[102%] rounded-[2rem] rounded-br-3xl bg-dark dark:bg-light  md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"
-          class="absolute  top-0 -right-3 -z-10 h-[103%] w-[102%] rounded-[2rem] rounded-br-3xl bg-dark dark:bg-light"
+          // className="absolute  top-0 -right-3 -z-10 h-[103%] w-[102%] rounded-[2rem] rounded-br-3xl bg-dark dark:bg-light  md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"
+          className="absolute  top-0 -right-3 -z-10 h-[103%] w-[102%] rounded-[2rem] rounded-br-3xl bg-dark dark:bg-light"
         ></div>
         <Link
           target="_blank"
-          class="w-full cursor-pointer overflow-hidden rounded-lg"
+          className="w-full cursor-pointer overflow-hidden rounded-lg"
           href={`${link}`}
         >
           <Image
@@ -20,28 +20,28 @@ const ProjectCard = ({ link, name, githubLink, imgURL }) => {
             height="720"
             decoding="async"
             data-nimg="1"
-            class="h-auto w-full"
+            className="h-auto w-full"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             src={imgURL}
           />
         </Link>
-        <div class="flex w-full flex-col items-start justify-between mt-4">
-          <span class="text-xl font-medium text-primary dark:text-primaryDark xs:text-base">
+        <div className="flex w-full flex-col items-start justify-between mt-4">
+          <span className="text-xl font-medium text-primary dark:text-primaryDark xs:text-base">
             Web Site Template
           </span>
           <Link
             target="_blank"
-            class="underline-offset-2 hover:underline"
+            className="underline-offset-2 hover:underline"
             href={`${link}`}
           >
-            <h2 class="my-2 w-full text-left text-3xl font-bold lg:text-3xl xs:text-2xl">
+            <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-3xl xs:text-2xl">
               {name}
             </h2>
           </Link>
-          <div class="flex w-full items-center  justify-between">
+          <div className="flex w-full items-center  justify-between">
             <Link
               target="_blank"
-              class="rounded text-lg font-medium underline md:text-lg "
+              className="rounded text-lg font-medium underline md:text-lg "
               aria-label="Crypto Screener Application"
               href={`${link}`}
             >
@@ -49,7 +49,7 @@ const ProjectCard = ({ link, name, githubLink, imgURL }) => {
             </Link>
             <Link
               target="_blank"
-              class="w-10"
+              className="w-10"
               aria-label={`View ${name} on GitHub`}
               href={`${githubLink}`}
             >
@@ -58,7 +58,7 @@ const ProjectCard = ({ link, name, githubLink, imgURL }) => {
                 width="1em"
                 height="1em"
                 viewBox="0 0 512 512"
-                class="w-full h-auto undefined"
+                className="w-full h-auto undefined"
               >
                 <path fill="none" d="M0 0h512v512H0z"></path>
                 <path
@@ -76,17 +76,18 @@ const ProjectCard = ({ link, name, githubLink, imgURL }) => {
   
 const FeaturedProject = ({ link, name, description, githubLink, imgURL }) => {
     return (
-      <article className="relative flex flex-col w-full items-center  justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl  dark:border-light dark:bg-dark  lg:flex-row  lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4  ">
+      <article className="relative p-8 flex  md:flex-col w-full items-center  justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl  dark:border-light dark:bg-dark  lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4  ">
         <div className="absolute  top-0 -right-3 -z-10 h-[103%] w-[101%] rounded-[2.5rem] rounded-br-3xl bg-dark dark:bg-light  xs:-right-2 xs:h-[102%] xs:w-[100%] xs:rounded-[1.5rem] ">
           {" "}
         </div>
+        
         <Link
           target="_blank"
-          className="w-full cursor-pointer overflow-hidden rounded-lg md:w-1/2"
+          className="md:w-full w-1/2 cursor-pointer overflow-hidden rounded-xl"
           href={`${link}`}
         >
           <Image
-            alt="Employee Management System"
+            alt=""
             width="1280"
             height="720"
             decoding="async"
@@ -96,7 +97,7 @@ const FeaturedProject = ({ link, name, description, githubLink, imgURL }) => {
             src={imgURL}
           />
         </Link>
-        <div className="flex w-full flex-col items-start justify-between  p-5 pl-6 lg:w-1/2 lg:pt-6">
+        <div className="flex md:w-full flex-col items-start justify-between  p-5 pl-6 w-1/2 lg:pt-6">
           <span className="text-xl font-medium text-primary dark:text-primaryDark xs:text-base">
             Featured Project
           </span>

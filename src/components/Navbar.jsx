@@ -64,7 +64,7 @@ const Navbar = () => {
     };
 
     return (
-        <header className="w-full px-32 lg:px-16 py-8 relative font-medium flex items-center justify-between bg-light dark:bg-dark dark:text-light ">
+        <header className="w-full px-32 lg:px-16 md:px-8 xs:px-8 py-8 relative font-medium flex items-center justify-between bg-light dark:bg-dark dark:text-light ">
             {/* Create Hamburger button  */}
             <button
                 className=" flex-col justify-center items-center hidden lg:flex"
