@@ -7,8 +7,6 @@ import {
     LinkedInIcon,
     SunIcon,
     MoonIcon,
-    LinkArrow,
-    DribbbleIcon,
 } from "./Icons.js";
 import { motion } from "framer-motion";
 import useThemeSwitcher from "./hooks/useThemeSwitcher.js";

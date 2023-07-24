@@ -1,44 +1,28 @@
 {
 "ExperienceList" : [
     {
-        "role": "Software Engineer",
+        "role": "Intern",
         "company": "Google",
         "companyLink": "https://google.com",
-        "period": "2022-Present",
-        "location": "Mountain View, CA",
-        "description": "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+        "period": "AUG 2022-OCT 2022",
+        "location": "Remote, INDIA",
+        "description": "Acquired advanced knowledge in Deep Learning through Andrew Ng's Coursera specialization, with expertise in data preprocessing, feature engineering, and model evaluation, using TensorFlow and Keras for model implementation and training."
     },
     {
-        "role": "Intern ",
-        "company": "Facebook",
-        "companyLink": "https://facebook.com",
-        "period": "2021-Present",
-        "location": "Menlo Park, CA",
-        "description": "Worked on a team responsible for developing new features for Facebook's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+        "role": "Research Intern ",
+        "company": "BitSilica/University of Finland",
+        "companyLink": "",
+        "period": "MAY 2022-JULY 2022",
+        "location": "Remote, INDIA",
+        "description": "Gained expertise in building AI recommendation engines from scratch, along with developing efficient REST APIs for Machine Learning model deployment, showcasing backend development skills using Django and Docker for seamless deployment."
     },
     {
-        "role": "Intern ",
-        "company": "Amazon",
-        "companyLink": "https://amazon.com",
-        "period": "2021-Present",
+        "role": "Student Intern ",
+        "company": "Verzeo/Microsoft",
+        "companyLink": "https://microsfot.com",
+        "period": "MAY 2020-JULY 2020",
         "location": "Seattle, WA",
-        "description": "Worked on a team responsible for developing new features for Amazon's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
-    },
-    {
-        "role": "Intern ",
-        "company": "Apple",
-        "companyLink": "https://apple.com",
-        "period": "2021-Present",
-        "location": "Cupertino, CA",
-        "description": "Worked on a team responsible for developing new features for Apple's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
-    },
-    {
-        "role": "Intern ",
-        "company": "Microsoft",
-        "companyLink": "https://microsoft.com",
-        "period": "2021-Present",
-        "location": "Redmond, WA",
-        "description": "Worked on a team responsible for developing new features for Microsoft's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+        "description": "Demonstrated proficiency in cloud-based solutions by successfully deploying a static website created using HTML, CSS, and JavaScript on Azure Cloud, hosting it through a Virtual Machine for efficient management and scalability."
     }
 ]
 }

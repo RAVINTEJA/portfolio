@@ -3,11 +3,15 @@ import Layout from "../components/Layout";
 import Image from "next/image";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
-import { LinkArrow } from "@/components/Icons";
+import { LinkArrow, MoonIcon, SunIcon } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
 import LightBulb from "/public/images/lightbulb.svg";
+import LightBulbDark from "/public/images/lightbulbdark.svg";
+import useThemeSwitcher from "@/components/hooks/useThemeSwitcher";
 
 export default function Home() {
+
+  const [theme, setTheme] = useThemeSwitcher();
   return (
     <>
       <Head>
@@ -63,7 +67,26 @@ export default function Home() {
         </Layout>
         <HireMe />
         <div className="absolute md:top-4 md:right-4 bottom-8 right-8 w-24 h-max lg:w-20 exmd:w-12 xs:w-8 inline-block bg-light dark:bg-dark">
-          <Image src={LightBulb} alt="Light Bulb" className="w-full h-auto" />
+          <button
+            onClick={() =>
+              setTheme(theme === "dark" ? "light" : "dark")
+            }
+            className="ml-3 sm:ml-2 flex items-center justify-center rounded-full p-1  bg-light dark:bg-dark"
+          >
+            {theme === "dark" ? (
+              <Image src={LightBulb} alt="Light Bulb" className="w-full h-auto" onClick={() =>
+                setTheme(
+                  theme === "dark" ? "light" : "dark"
+                )
+              } />
+            ) : (
+              <Image src={LightBulbDark} alt="Light Bulb Dark" className="w-full h-auto" onClick={() =>
+                setTheme(
+                  theme === "dark" ? "light" : "dark"
+                )
+              } />
+            )}
+          </button>
         </div>
       </main>
     </>
